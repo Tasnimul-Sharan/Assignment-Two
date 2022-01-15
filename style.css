@@ -23,7 +23,7 @@ h1{
 .starting img{
    width: 440px;
    height: 414px;
-   padding-left: 10%;
+   padding-left: 15%;
 }
 a{
     text-decoration: none;
@@ -93,6 +93,10 @@ h3{
     font-size: 10px;
     color: #FB8200;
 }
+.rating{
+    margin: 5px;
+    color: #5E6366;
+}
 p{
     color:#787885;
     font-size: 14px;
@@ -107,7 +111,6 @@ p{
 }
 footer{
     display: flex;
-    /* flex-direction: column; */
     height: 239px;
     text-align: center;
     background: #0A0826;
@@ -137,6 +140,11 @@ h2{
 /* for mobile phones */
  /* @media only screen and (min-width: 600px) { */
     @media (max-width:600px) {
+        .upper-container{
+            display: flex;
+            flex-direction: column-reverse;
+            margin-right: 10px; 
+        }
         .main{
             display: flex;
             flex-direction: column;
@@ -153,15 +161,32 @@ h2{
         .foto{
            display: flex;
            flex-direction: column;
-           /* justify-content: end;
-           align-items: flex-end; */
-            /* display: flex;
-            justify-content: end;
-            align-items: flex-end; */
         }
-
     }
 /* for tablets */
-/* @media only screen and (min-width: 768px) {
+/* @media only screen and (max-width: 992px) */
 
-} */
+@media (max-width:992px) {
+    .upper-container{
+        display: flex;
+        flex-direction: column;
+        /* margin-right: 10px; */
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .foto{
+       display: flex;
+       flex-direction: column;
+    }
+
+
+}
