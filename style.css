@@ -138,7 +138,7 @@ h2{
     font-size: 14px;
 }
 /* for mobile phones */
- /* @media only screen and (min-width: 600px) { */
+ /* @media (min-width: 600px) { */
     @media (max-width:600px) {
         .upper-container{
             display: flex;
@@ -164,7 +164,7 @@ h2{
         }
     }
 /* for tablets */
-/* @media only screen and (max-width: 992px) */
+/* @media (max-width: 992px) */
 
 @media (max-width:992px) {
     .upper-container{
